@@ -7,15 +7,18 @@
     <title>Lo De Malala</title>
     <link rel="shortcut icon" href="../Multimedia/lo-de-malala-logo.jpeg" type="image/x-icon">
 
+    <link rel="stylesheet" href="../Estilos/bootstrap.min.css">
     <link rel="stylesheet" href="../Estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Covered+By+Your+Grace&family=Kristi&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="arriba">
-        <h1 class="tituloPrincipal"> Lo De Malala</h1>
-        <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="Logo lo de Malala" class="imagenLogo">
+    <header id="arriba" class="encabezado">
+        <div class="encabezadoLogo">
+            <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="Logo lo de Malala" class="imagenLogo">
+            <h1 class="tituloPrincipal"> Lo de Malala</h1>
+        </div>
         <nav class="encabezadoMenu">
             <ul class="encabezadoMenulista">
                 <li><a href="../index.html">Inicio</a></li>
@@ -26,33 +29,43 @@
             </ul>    
         </nav>
     </header>
+    
     <main class="mainNosotros">
-        <h2 class="mainTitulo">Nuestra Historia</h2>
-        <P class="mainHistoria">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum optio minima nam mollitia, in commodi qui consequatur aspernatur accusantium, eligendi architecto! Debitis optio nisi incidunt non ad quae modi, veniam, temporibus ex officia labore suscipit earum repellat adipisci aspernatur autem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, molestiae?</P>
-        <img src="../Multimedia/foto-casita-1.jpeg" alt="Empezando el armado de la casita" class="mainImagen1">
-        <img src="../Multimedia/foto-casita-2.jpeg" alt="Armando la casita" class="mainImagen2">
-        <h4 class="mainAntes">Antes</h4>
-        <img src="../Multimedia/foto-casita-4.jpeg" alt="Casita Antes" class="mainImagen3"> 
-        <h4 class="mainDespues">Despues</h4>
-        <img src="../Multimedia/foto-casita-3.jpeg" alt="Casita Terminada" class="mainImagen4">
-
+        <div class="mainDiv1">
+            <h2 class="mainTitulo">Nuestra Historia</h2>
+            <P class="mainHistoria">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum optio minima nam mollitia, in commodi qui consequatur aspernatur accusantium, eligendi architecto! Debitis optio nisi incidunt non ad quae modi, veniam, temporibus ex officia labore suscipit earum repellat adipisci aspernatur autem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, molestiae?</P>
+        </div>
+        <div class="mainDiv2">
+            <img src="../Multimedia/foto-casita-1.jpeg" alt="Empezando el armado de la casita" class="mainImagen1">
+            <img src="../Multimedia/foto-casita-2.jpeg" alt="Armando la casita" class="mainImagen2">
+        </div>
+        <div class="mainDivantes">    
+            <h4 class="mainAntes">Antes</h4>
+            <img src="../Multimedia/foto-casita-4.jpeg" alt="Casita Antes" class="mainImagen3"> 
+        </div>
+        <div class="mainDivdespues">
+            <h4 class="mainDespues">Despues</h4>
+            <img src="../Multimedia/foto-casita-3.jpeg" alt="Casita Terminada" class="mainImagen4">
+        </div>        
     </main>
+
     <section class="sectionNosotros">
-        <article>
+        <article class="Malala">
             <h3 class="tituloMalala">Malala</h3>
             <p class="parrafoMalala">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo veritatis quos ipsum molestiae omnis totam quam delectus maiores exercitationem amet vitae porro, iusto odit assumenda? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, commodi.</p>
         </article>
 
-        <article>
+        <article class="Lalo">
             <h3 class="tituloLalo">Lalo</h3>
             <p class="parrafoLalo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sed dolore, perspiciatis modi fugiat rem quod. Ipsam id ullam rem.</p>    
         </article>
     </section>
+
     <footer class="piedePagina2">
         <a href="https://www.instagram.com/lodemalala/">Instagram</a>
         <a href="https://api.whatsapp.com/send?phone=541130674928&text=%C2%A1Buenos%20d%C3%ADas%20Malala!%20Soy">Whatsapp</a>
         <a href="#arriba">Subir</a>
-    </footer>
-    
+    </footer> 
+    <script href="../js/bootstrap.min.js"></script>
 </body>
 </html>

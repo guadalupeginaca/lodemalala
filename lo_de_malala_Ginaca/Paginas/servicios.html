@@ -7,15 +7,18 @@
     <title>Lo De Malala</title>
     <link rel="shortcut icon" href="../Multimedia/lo-de-malala-logo.jpeg" type="image/x-icon">
 
+    <link rel="stylesheet" href="../Estilos/bootstrap.min.css">
     <link rel="stylesheet" href="../Estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Covered+By+Your+Grace&family=Kristi&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="arriba">
-        <h1 class="tituloPrincipal"> Lo De Malala</h1>
-        <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="Logo lo de Malala" class="imagenLogo">
+    <header id="arriba" class="encabezado">
+        <div class="encabezadoLogo">
+            <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="Logo lo de Malala" class="imagenLogo">
+            <h1 class="tituloPrincipal"> Lo de Malala</h1>
+        </div>
         <nav class="encabezadoMenu">
             <ul class="encabezadoMenulista">
                 <li><a href="../index.html">Inicio</a></li>
@@ -26,7 +29,7 @@
             </ul>    
         </nav>
     </header>
-    <main>
+    <main class="mainServicios">
         <h2 class="tituloTabla">Servicios</h2>
         <table cellspacing="25px" class="tablaServicios">
             <th class="tableColumn1">Servicio</th>
@@ -64,7 +67,7 @@
 
         </table>
     </main>
-    <section>
+    <section class="seccionServ">
         <h3 class="estadiaIncluye">Estadia incluye:</h3>
         <ul class="bulletList">
             <li>Cuidado personalizado 24 horas, nunca están solos</li>
@@ -80,6 +83,6 @@
         <a href="https://api.whatsapp.com/send?phone=541130674928&text=%C2%A1Buenos%20d%C3%ADas%20Malala!%20Soy">Whatsapp</a>
         <a href="#arriba">Subir</a>
     </footer>
-    
+    <script href="../js/bootstrap.min.js"></script>
 </body>
 </html>
