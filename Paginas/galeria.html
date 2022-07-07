@@ -15,55 +15,94 @@
 </head>
 <body>
     <header id="arriba" class="encabezado">
-        <div class="encabezadoLogo">
-            <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="Logo lo de Malala" class="imagenLogo">
-            <h1 class="tituloPrincipal"> Lo de Malala</h1>
-        </div>
-        <nav class="encabezadoMenu">
-            <ul class="encabezadoMenulista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="encabezado">
+                <div class="encabezadoLogo">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="" class="d-inline-block align-text-top" id="imagenLogo">
+                    Lo de Malala
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" class="encabezadoMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h2 class="tituloGaleria">Galeria</h2>
-        <div class="textoInterior"></div>
-            <h3 class="texto1">Perro 1</h3>
-        <div class="parallax imag1"></div>
-            <h3 class="texto2">Perro 2</h3>
-        <div class="parallax imag2"></div>
-            <h3 class="texto3">Perro 3</h3>
-        <div class="parallax imag3"></div>
-            <h3 class="texto4">Perro 4</h3>
-        <div class="parallax imag4"></div>
-            <h3 class="texto5">Perro 5</h3>
-        <div class="parallax imag5"></div>
-            <h3 class="texto6">Perro 6</h3>
-        <div class="parallax imag6"></div>
-            <h3 class="texto7">Perro 7</h3>
-        <div class="parallax imag7"></div>
-            <h3 class="texto8">Perro 8</h3>
-        <div class="parallax imag8"></div>
-            <h3 class="texto9">Perro 9</h3>
-        <div class="parallax imag9"></div>
-            <h3 class="texto10">Perro 10</h3>
-        <div class="parallax imag10"></div>
-            <h3 class="texto11">Perro 11</h3>
-        <div class="parallax imag11"></div>
-            <h3 class="texto12">Perro 12</h3>
-        <div class="parallax imag12"></div>
-            <h3 class="texto13">Perro 13</h3>
-        <div class="parallax imag13"></div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Multimedia/foto-perro-1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-3.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-4.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-5.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-6.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/fot-perro-7.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-8.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-9.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-10.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-11.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-12.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../Multimedia/foto-perro-13.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden" Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
     <footer class="piedePagina4">
         <a href="https://www.instagram.com/lodemalala/">Instagram</a>
         <a href="https://api.whatsapp.com/send?phone=541130674928&text=%C2%A1Buenos%20d%C3%ADas%20Malala!%20Soy">Whatsapp</a>
         <a href="#arriba">Subir</a>
     </footer>
-    <script href="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

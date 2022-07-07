@@ -15,18 +15,34 @@
 </head>
 <body>
     <header id="arriba" class="encabezado">
-        <div class="encabezadoLogo">
-            <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="Logo lo de Malala" class="imagenLogo">
-            <h1 class="tituloPrincipal"> Lo de Malala</h1>
-        </div>
-        <nav class="encabezadoMenu">
-            <ul class="encabezadoMenulista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>    
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="encabezado">
+                <div class="encabezadoLogo">
+                    <a class="navbar-brand" href="../index.html">
+                    <img src="../Multimedia/lo-de-malala-logo.jpeg" alt="" class="d-inline-block align-text-top" id="imagenLogo">
+                    Lo de Malala
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" class="encabezadoMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -62,6 +78,6 @@
         <a href="https://api.whatsapp.com/send?phone=541130674928&text=%C2%A1Buenos%20d%C3%ADas%20Malala!%20Soy">Whatsapp</a>
         <a href="#arriba">Subir</a>
     </footer>
-    <script href="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
