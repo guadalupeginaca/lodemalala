@@ -13,11 +13,12 @@
 
 @font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
 /* agregue linear-gradient al background del encabezado en todas las paginas */
-#encabezado{
-    justify-content: space-between;
-    z-index: 700;
-    /* background-color: linear-gradient(to right, rgb(182, 146, 192), rgb(240, 226, 245)); */
+.encabezado{
+    /* justify-content: space-between;
+    z-index: 700; */
+    background: linear-gradient(to right, rgb(240, 226, 245), rgb(182, 146, 192));
 }
+
 
 .encabezadoLogo{
     display: flex;
@@ -25,16 +26,19 @@
     padding-bottom: 15px;
 }
 
-#imagenLogo{
+.imagenLogo{
     width: 60px; 
     height: 50px;
+    position: relative;
+    top: 40px;
+    margin: 0px 0px 0px 35px;
 }
 
-.navbar-toggler{
+/* .navbar-toggler{
     margin: 0px 20px 0px 0px;
-}
+} */
 
-.navbar-brand{
+.tituloPrincipal{
     color: rgb(78, 90, 162);
     font-size: 40px;
     font-family: 'Virtual';
@@ -43,25 +47,25 @@
     margin: 30px 20px 10px 20px;
 }
 
-.imagenLogo{
+/* .imagenLogo{
     width: 90px;
     height: 80px;
     position: relative;
     top: 40px;
     margin: 0px 0px 0px 35px;
-}
+} */
 
-.navbar-nav{
+.encabezadoMenu{
     position: absolute;
     right: 35px;
     top: 100px;
     padding: 5px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
-    background-color: rgb(155, 162, 203);
+    /* background-color: rgb(155, 162, 203); */
 }
 
-.navbar-nav li{
+.encabezadoMenulista li{
     display: inline;
 }
 
@@ -75,7 +79,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 }
 
 .mainParrafo{
-    margin: 20px 50px;
+    margin: 15px 30px;
     font-family: 'Coming Soon', cursive;
     font-size: 15px;
     text-align: center;
@@ -86,10 +90,15 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 .imagen1{
     width: 350px;
     height: 250px;
+    transition: all 3s;
+}
+.imagen1:hover{
+    width: 550px;
+    height: 350px;
 }
 
 .piedePagina{
-    margin: 40px;
+    margin: 20px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
     display: flex;
@@ -117,7 +126,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     grid-area:"tituloyparrafo";
 }
 
-.mainTitulo{
+#mainTitulo{
     font-size: 30px;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
@@ -146,15 +155,39 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     margin: 10px 20px;
     position: relative;
     left: 20px;
+    transition: all 2s;
+}
+.mainImagen1:hover{
+    width: 280px;
+    height: 170px;
+    transform: rotate(70deg);
 }
 
 .mainImagen2{
     width: 370px;
     height: 250px;
     margin: 10px 50px;
+    /* ANIMACIONES */
 }
 
 /* Columna 1 Fila 2 */
+@keyframes desaparicion {
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 75%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 25%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
 .mainDivantes{
     grid-area: "antes";
 }
@@ -171,10 +204,33 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     /* margin: 30px; */
     width: 400px;
     height: 270px;
-    
+    /* ANIMACIONES */
+    animation-name: desaparicion;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* Columna 2 Fila 2 */
+@keyframes aparicion{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 .mainDivdespues{
     grid-area: "despues";
 }
@@ -191,6 +247,12 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     /* margin: 30px; */
     width: 400px;
     height: 270px;
+    /* ANIMACIONES */
+    animation-name: aparicion;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* Aca arme 2 grids para que este mas organizado*/
@@ -637,25 +699,22 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     .encabezadoLogo{
         flex-flow: row wrap;
     }
-    .navbar-brand{
+    .tituloPrincipal{
         font-size: 60px;
     }
-    #imagenLogo{
+    .imagenLogo{
         width: 80px;
         height: 60px;
     }
-    .navbar-nav{
+    .encabezadoMenu{
         position: absolute;
         right: 35px;
-        top: 110px;
+        top: 60px;
     }
-    /* .encabezadoMenulista{
+    .encabezadoMenulista{
         right: 30px;
         font-size: 15px;
-        position: absolute;
-        right: 70px;
-        top: 70px;
-    } */
+    }   
     /* index */
     .mainParrafo{
         font-size: 20px;
@@ -800,15 +859,14 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 /* DESKTOP */
 @media screen and (min-width: 1024px){
     /* Header de todas las paginas*/
-    #encabezado{
+    .encabezado{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
         grid-template-areas: 
         "Logo Menu";
-        align-items: center;
     }
-    #imagenLogo{
+    .imagenLogo{
         margin: 0px 0px 0px 10px;
         width: 100px;
         height: 80px;
@@ -818,17 +876,15 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     }
     .encabezadoMenu{
         grid-area: "Menu";
-    }
-    .navbar-brand{
+        align-items: center;
         font-size: 70px;
-        margin: 25px 20px 10px 10px;
     }
-    .navbar-nav li{
+    .encabezadoMenu li{
         font-size: 20px;
     }
-    .navbar-nav{
+    /* .navbar-nav{
         background-color: transparent;
-    }
+    } */
     /* Index */
     .imagen1{
         width: 1200px;
