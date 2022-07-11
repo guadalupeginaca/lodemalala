@@ -13,11 +13,6 @@
 
 @font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
 /* agregue linear-gradient al background del encabezado en todas las paginas */
-#encabezado{
-    justify-content: space-between;
-    z-index: 700;
-    /* background-color: linear-gradient(to right, rgb(182, 146, 192), rgb(240, 226, 245)); */
-}
 
 .encabezadoLogo{
     display: flex;
@@ -59,10 +54,6 @@
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
     background-color: rgb(155, 162, 203);
-}
-
-.navbar-nav li{
-    display: inline;
 }
 
 /* Index 
@@ -348,7 +339,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     margin: 20px 20px 20px 40px;
 }
 
-.parallax{
+/* .parallax{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -356,7 +347,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     height: 300px;
     max-width: 100%;
     position: relative;
-}
+} */
  
 .texto1{
     font-size: 25px;
@@ -521,7 +512,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 }
 
 .textoConsultas{
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
@@ -531,7 +522,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 .gridContacto{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 450px 350px;
+    grid-template-rows: 600px 350px;
     grid-template-areas: 
     "formulario"
     "logo";
@@ -605,6 +596,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 .fotoContacto{
    z-index: 500;
    height: 200px;
+   margin: 10px 0px 0px 0px;
 }
 
 .fontLogo{
@@ -802,32 +794,31 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     /* Header de todas las paginas*/
     #encabezado{
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
+        grid-template-columns: repeat(2, 510px);
+        grid-template-rows: 150px;
         grid-template-areas: 
         "Logo Menu";
-        align-items: center;
     }
+    .encabezadoLogo{
+        grid-area: "Logo";
+    }   
     #imagenLogo{
         margin: 0px 0px 0px 10px;
         width: 100px;
         height: 80px;
-    }
-    .encabezadoLogo{
-        grid-area: "Logo";
-    }
-    .encabezadoMenu{
-        grid-area: "Menu";
-    }
+    } 
     .navbar-brand{
         font-size: 70px;
         margin: 25px 20px 10px 10px;
     }
-    .navbar-nav li{
-        font-size: 20px;
-    }
     .navbar-nav{
         background-color: transparent;
+        grid-area: "Menu";
+        position: absolute;
+        top: 70px;
+    }
+    .navbar-nav li{
+        font-size: 20px;
     }
     /* Index */
     .imagen1{
@@ -974,7 +965,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     }
     .gridContacto{
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 450px;
+        grid-template-rows: 580px;
         grid-template-areas: 
         "formulario logo";
         justify-content: center;
