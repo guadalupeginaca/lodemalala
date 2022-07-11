@@ -3,7 +3,7 @@
     rgb(183, 175, 193) lila muy clarito
     rgb(78, 90, 162) violeta oscuro
     rgb(155, 162, 203) lila
-    */ 
+*/ 
 
 *{
     margin: 0px;
@@ -11,8 +11,8 @@
     box-sizing: border-box;
 }
 
+/* Logo font */
 @font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
-/* agregue linear-gradient al background del encabezado en todas las paginas */
 
 .encabezadoLogo{
     display: flex;
@@ -56,8 +56,7 @@
     background-color: rgb(155, 162, 203);
 }
 
-/* Index 
-Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la derecha*/
+/* Index */
 
 .mainIndex{
     display: flex;
@@ -159,7 +158,6 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 }
 
 .mainImagen3{
-    /* margin: 30px; */
     width: 400px;
     height: 270px;
     
@@ -179,7 +177,6 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 }
 
 .mainImagen4{
-    /* margin: 30px; */
     width: 400px;
     height: 270px;
 }
@@ -338,16 +335,6 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     color: rgb(78, 90, 162);
     margin: 20px 20px 20px 40px;
 }
-
-/* .parallax{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    max-width: 100%;
-    position: relative;
-} */
  
 .texto1{
     font-size: 25px;
@@ -534,7 +521,6 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     font-size: 18px;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
-    /* margin: 40px 20px 20px 40px; */
 }
 
 .labelNom{
