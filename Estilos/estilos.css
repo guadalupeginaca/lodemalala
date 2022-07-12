@@ -54,6 +54,7 @@
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
     background-color: rgb(155, 162, 203);
+    z-index: 7000;
 }
 
 /* Index */
@@ -134,14 +135,12 @@
     width: 400px;
     height: 270px;
     margin: 10px 20px;
-    position: relative;
-    left: 20px;
 }
 
 .mainImagen2{
     width: 370px;
     height: 250px;
-    margin: 10px 50px;
+    margin: 10px 0px 10px 35px;   
 }
 
 /* Columna 1 Fila 2 */
@@ -609,7 +608,7 @@
     justify-content: space-evenly;
 }
 
-/* TABLET */
+/* TABLET [pantalla mediana]*/
 @media screen and (min-width: 768px){
     /* Header de todas las pagins*/
     .encabezadoLogo{
@@ -656,10 +655,14 @@
     .mainImagen1{
         width: 500px;
         height: 300px;
+        position: relative;
+        left: 110px;
     }
     .mainImagen2{
         width: 380px;
         height: 200px;
+        position: relative;
+        left: 150px;
     }
     .mainImagen3{
         width: 500px;
@@ -775,8 +778,8 @@
     }
 }
 
-/* DESKTOP */
-@media screen and (min-width: 1024px){
+/* DESKTOP [pantalla grande]*/
+@media screen and (min-width: 992px){
     /* Header de todas las paginas*/
     #encabezado{
         display: grid;
@@ -837,20 +840,22 @@
         font-size: 25px;
     }
     .mainImagen1{
-        width: 550px;
-        height: 380px;
+        width: 500px;
+        height: 330px;
+        position: unset;
     }
     .mainImagen2{
         width: 400px;
         height: 250px;
-        margin: 5px 0px 10px 115px;
+        margin: 5px 0px 10px 70px;
+        position: unset;
     }
     .mainImagen3{
-        width: 600px;
+        width: 550px;
         height: 450px;
     }
     .mainImagen4{
-        width: 600px;
+        width: 550px;
         height: 450px;
     }
     .piedePagina2{
