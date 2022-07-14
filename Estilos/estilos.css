@@ -13,6 +13,10 @@
 
 @font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
 /* agregue linear-gradient al background del encabezado en todas las paginas */
+#encabezado{
+    background-color: rgb(199, 205, 233);
+    padding: unset;
+}
 
 .encabezadoLogo{
     display: flex;
@@ -31,7 +35,7 @@
 
 .navbar-brand{
     color: rgb(78, 90, 162);
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Virtual';
     font-weight: 500;
     text-align: left;
@@ -48,13 +52,13 @@
 
 .navbar-nav{
     position: absolute;
-    right: 35px;
+    right: 22px;
     top: 100px;
     padding: 5px;
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Coming Soon', cursive;
-    background-color: rgb(155, 162, 203);
     z-index: 7000;
+    background-color: rgb(155, 162, 203);
 }
 
 /* Index */
@@ -68,7 +72,7 @@
 .mainParrafo{
     margin: 20px 50px;
     font-family: 'Coming Soon', cursive;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     color:rgb(78, 90, 162);
     font-style: italic;
@@ -101,6 +105,7 @@
     "despues";
     grid-row-gap: 10px;
     justify-items: center;
+    background-color:  rgb(188, 208, 241);
 }
 
 /* Columna 1 Fila 1 */
@@ -364,7 +369,7 @@
 .gridContacto{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 450px 350px;
+    grid-template-rows: 600px 350px;
     grid-template-areas: 
     "formulario"
     "logo";
@@ -376,7 +381,6 @@
     font-size: 18px;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
-    /* margin: 40px 20px 20px 40px; */
 }
 
 .labelNom{

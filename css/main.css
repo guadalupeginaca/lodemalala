@@ -2,6 +2,43 @@
   font-family: Virtual;
   src: url("../Fuentes/Virtual-Regular.ttf"); }
 
+.encabezadoLogo {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 15px; }
+
+#imagenLogo {
+  width: 60px;
+  height: 50px; }
+
+.navbar-toggler {
+  margin: 0px 20px 0px 0px; }
+
+.navbar-brand {
+  color: #4e5aa2;
+  font-size: 40px;
+  font-family: 'Virtual';
+  font-weight: 500;
+  text-align: left;
+  margin: 30px 20px 10px 20px; }
+
+.imagenLogo {
+  width: 90px;
+  height: 80px;
+  position: relative;
+  top: 40px;
+  margin: 0px 0px 0px 35px; }
+
+.navbar-nav {
+  position: absolute;
+  right: 35px;
+  top: 100px;
+  padding: 5px;
+  font-size: 10px;
+  font-family: 'Coming Soon', cursive;
+  background-color: #9ba2cb;
+  z-index: 7000; }
+
 .mainIndex {
   display: flex;
   flex-flow: row wrap;
@@ -581,40 +618,3 @@
     grid-area: "logo"; }
   .piedePagina5 {
     font-size: 20px; } }
-
-.encabezadoLogo {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-bottom: 15px; }
-
-#imagenLogo {
-  width: 60px;
-  height: 50px; }
-
-.navbar-toggler {
-  margin: 0px 20px 0px 0px; }
-
-.navbar-brand {
-  color: #4e5aa2;
-  font-size: 40px;
-  font-family: 'Virtual';
-  font-weight: 500;
-  text-align: left;
-  margin: 30px 20px 10px 20px; }
-
-.imagenLogo {
-  width: 90px;
-  height: 80px;
-  position: relative;
-  top: 40px;
-  margin: 0px 0px 0px 35px; }
-
-.navbar-nav {
-  position: absolute;
-  right: 35px;
-  top: 100px;
-  padding: 5px;
-  font-size: 10px;
-  font-family: 'Coming Soon', cursive;
-  background-color: #9ba2cb;
-  z-index: 7000; }

@@ -1,17 +1,9 @@
 $Lilamuyclarito: rgb(183, 175, 193);
 $Lila: rgb(155, 162, 203);
 $Violeta: rgb(78, 90, 162);
+$Celeste: rgb(155, 162, 203);
+$Blanquito: rgb(223, 231, 243);
 @font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
-
-
-@import "index";
-@import "nosotros";
-@import "servicios";
-@import "galeria";
-@import "contacto";
-@import "tabletscreen";
-@import "desktopscreen";
-
 
 .encabezadoLogo{
     display: flex;
@@ -55,3 +47,11 @@ $Violeta: rgb(78, 90, 162);
     background-color: $Lila;
     z-index: 7000;
 } 
+
+@import "index";
+@import "nosotros";
+@import "servicios";
+@import "galeria";
+@import "contacto";
+@import "tabletscreen";
+@import "desktopscreen";
