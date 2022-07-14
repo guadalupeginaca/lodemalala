@@ -1,0 +1,117 @@
+.tituloContacto{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+    margin: 20px 20px 5px 40px;
+}
+
+.textoConsultas{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+    margin: 10px 20px;
+}
+
+.gridContacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 450px 350px;
+    grid-template-areas: 
+    "formulario"
+    "logo";
+    justify-items: center;
+}
+
+.formulario1{
+    grid-area: "formulario";
+    font-size: 18px;
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+}
+
+.labelNom{
+    display: block;
+    margin: 5px 10px;
+}
+
+.boxNom{
+    display: block;
+    margin: 5px 10px;
+}
+
+.labelTel{
+    display: block;
+    margin: 10px 10px 5px 10px;
+}
+
+.boxTel{
+    display: block;
+    margin: 5px 10px;
+}
+
+.labelEmail{
+    display: block;
+    margin: 10px 10px 5px 10px;
+}
+
+.boxEmail{
+    display: block;
+    margin: 5px 10px;
+}
+
+.labelMens{
+    display: block;
+    margin: 10px 10px 5px 10px;
+}
+
+.boxMens{
+    display: block;
+    margin: 5px 10px;
+}
+
+.botonEnviar{
+    margin: 10px 5px 5px 10px;
+}
+
+.botonBorrar{
+    margin: 10px 5px 5px 5px;
+}
+
+.botonNada{
+    margin: 10px 5px 5px 5px;
+}
+
+.logoFrase{
+    grid-area: "logo";
+}
+
+.fotoContacto{
+   z-index: 500;
+   height: 200px;
+}
+
+.fontLogo{
+    font-family: "Virtual";
+    font-size: 55px;
+    text-align: center;
+    color: $Violeta;
+}
+
+.piefotoContacto{
+    font-size: 18px;
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+    margin: 20px;
+    text-align: center;
+}
+
+.piedePagina5{
+    margin: 40px;
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}

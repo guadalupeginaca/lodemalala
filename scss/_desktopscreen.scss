@@ -1,0 +1,189 @@
+@media screen and (min-width: 992px){
+    /* Header de todas las paginas*/
+    #encabezado{
+        display: grid;
+        grid-template-columns: repeat(2, 510px);
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "Logo Menu";
+    }
+    .encabezadoLogo{
+        grid-area: "Logo";
+    }
+    #imagenLogo{
+        margin: 0px 0px 0px 10px;
+        width: 100px;
+        height: 80px;
+    }
+    .navbar-brand{
+        font-size: 70px;
+        margin: 25px 20px 10px 10px;
+    }
+    .navbar-nav{
+        background-color: transparent;
+        grid-area: "Menu";
+        position: absolute;
+        top: 70px;
+    }
+    .navbar-nav li{
+        font-size: 20px;
+    }
+    /* Index */
+    .imagen1{
+        width: 1200px;
+        height: 800px;
+    }
+    .mainParrafo{
+        font-size: 25px;
+        margin: 20px 150px;
+    }
+    .piedePagina{
+        font-size: 20px;
+    }
+    /* Nosotros */
+    .mainNosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 4fr 3fr;
+        grid-template-areas:
+        "tituloyparrafo mainImagen1y2"
+        "antes despues";
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        justify-items: center;
+    }
+    .mainTitulo{
+        font-size: 50px;
+    }
+    .mainHistoria{
+        font-size: 25px;
+    }
+    .mainImagen1{
+        width: 500px;
+        height: 330px;
+        position: unset;
+    }
+    .mainImagen2{
+        width: 400px;
+        height: 250px;
+        margin: 5px 0px 10px 70px;
+        position: unset;
+    }
+    .mainImagen3{
+        width: 550px;
+        height: 450px;
+    }
+    .mainImagen4{
+        width: 550px;
+        height: 450px;
+    }
+    .piedePagina2{
+        font-size: 20px;
+    }
+    /* Servicios */
+    .tituloTabla{
+        font-size: 50px;
+    }
+    .tablaServicios{
+        font-size: 25px;
+    }
+    .tableColumn1{
+        font-size: 30px;
+    }
+    .tableColumn2{
+        font-size: 30px;
+    }
+    .estadiaIncluye{
+        font-size: 27px;
+    }
+    .bulletList li{
+        font-size: 20px;
+    }
+    .piedePagina3{
+        font-size: 20px;
+    }
+    /* Galeria */
+    .tituloGaleria{
+        font-size: 50px;
+    }
+    .texto1{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto2{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto3{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto4{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto5{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto6{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto7{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto8{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto9{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto10{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto11{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto12{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .texto13{
+        margin: 20px 40px;
+        font-size: 35px;
+    }
+    .piedePagina4{
+        font-size: 20px;
+    }
+    /* Contacto */
+    .tituloContacto{
+        font-size: 50px;
+    }
+    .textoConsultas{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .gridContacto{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 580px;
+        grid-template-areas: 
+        "formulario logo";
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario1{
+        grid-area: "formulario";
+    }
+    .logoFrase{
+        grid-area: "logo";
+    }
+    .piedePagina5{
+        font-size: 20px;
+    }
+}

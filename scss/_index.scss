@@ -1,0 +1,29 @@
+
+.mainIndex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.mainParrafo{
+    margin: 20px 50px;
+    font-family: 'Coming Soon', cursive;
+    font-size: 15px;
+    text-align: center;
+    color: $Violeta;
+    font-style: italic;
+}
+
+.imagen1{
+    width: 350px;
+    height: 250px;
+}
+
+.piedePagina{
+    margin: 40px;
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}

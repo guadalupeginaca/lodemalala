@@ -1,0 +1,16 @@
+.tituloGaleria{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+    margin: 20px 20px 20px 40px;
+}
+
+.piedePagina4{
+    margin: 40px;
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}

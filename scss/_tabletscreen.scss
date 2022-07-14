@@ -1,0 +1,158 @@
+@media screen and (min-width: 768px){
+    /* Header de todas las pagins*/
+    .encabezadoLogo{
+        flex-flow: row wrap;
+    }
+    .navbar-brand{
+        font-size: 60px;
+    }
+    #imagenLogo{
+        width: 80px;
+        height: 60px;
+    }
+    .navbar-nav{
+        position: absolute;
+        right: 35px;
+        top: 60px;
+    }
+    /* index */
+    .mainParrafo{
+        font-size: 20px;
+    }
+    .imagen1{
+        width: 700px;
+        height: 500px;
+    }
+    .piedePagina{
+        font-size: 15px;
+    }
+    /* Nosotros */
+    .mainTitulo{
+        font-size: 40px;
+    }
+    .mainHistoria{
+        font-size: 20px;
+    } 
+    /* No entiendo porque mainImagen1 y mainImagen2 no se centran si yo ya puse justify-items:center */
+    .mainImagen1{
+        width: 500px;
+        height: 300px;
+        position: relative;
+        left: 110px;
+    }
+    .mainImagen2{
+        width: 380px;
+        height: 200px;
+        position: relative;
+        left: 150px;
+    }
+    .mainImagen3{
+        width: 500px;
+        height: 300px;
+    }
+    .mainImagen4{
+        width: 500px;
+        height: 300px;
+    }
+    /* Servicios */
+    .mainServicios{
+        grid-template-rows: 100px 400px;
+    }
+    .tituloTabla{
+        font-size: 40px;
+    }
+    .tablaServicios{
+        font-size: 20px;
+    }
+    .tableColumn1{
+        font-size: 22px;
+    }
+    .tableColumn2{
+        font-size: 22px;
+    }
+    .seccionServ{
+        grid-template-rows: 70px 250px;
+    }
+    .estadiaIncluye{
+        font-size: 22px;
+        position: relative;
+        left: 110px;
+    }
+    .bulletList li{
+        font-size: 18px;
+        position: relative;
+        left: 140px;
+    }
+    .piedePagina3{
+        font-size: 15px;
+    }
+    /* Galeria */
+    .tituloGaleria{
+        font-size: 40px;
+    }
+    .texto1{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto2{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto3{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto4{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto5{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto6{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto7{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto8{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto9{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto10{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto11{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto12{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .texto13{
+        margin: 10px 25px;
+        font-size: 30px;
+    }
+    .piedePagina4{
+        font-size: 15px;
+    }
+    /* Contacto */
+    .tituloContacto{
+        font-size: 40px;
+    }
+    .textoConsultas{
+        font-size: 25px;
+    }
+    .piedePagina5{
+        font-size: 15px;
+    }
+}

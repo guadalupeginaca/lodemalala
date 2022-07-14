@@ -1,1 +1,140 @@
 
+.mainNosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 280px 630px 400px 400px;
+    grid-template-areas:
+    "tituloyparrafo"
+    "mainImagen1y2"
+    "antes"
+    "despues";
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+/* Columna 1 Fila 1 */
+.mainDiv1{
+    grid-area:"tituloyparrafo";
+}
+
+.mainTitulo{
+    font-size: 30px;
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+    margin: 20px 20px 20px 40px;
+    text-align: center;
+}
+
+.mainHistoria{
+    font-size: 15px;
+    font-family: 'Coming Soon', cursive;
+    color: $Lila;
+    margin: 0px 40px 15px 40px;
+    text-align: center;
+}
+
+/* Columna 2 Fila 1 */
+.mainDiv2{
+    grid-area: "mainImagen1y2";
+    justify-content: center;
+}
+
+.mainImagen1{
+    width: 400px;
+    height: 270px;
+    margin: 10px 20px;
+}
+
+.mainImagen2{
+    width: 370px;
+    height: 250px;
+    margin: 10px 0px 10px 35px;
+}
+
+/* Columna 1 Fila 2 */
+.mainDivantes{
+    grid-area: "antes";
+}
+
+.mainAntes{
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Covered By Your Grace', cursive;
+    color: $Violeta;
+}
+
+.mainImagen3{
+    width: 400px;
+    height: 270px;
+}
+
+/* Columna 2 Fila 2 */
+.mainDivdespues{
+    grid-area: "despues";
+}
+
+.mainDespues{
+    margin: 5px 10px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Covered By Your Grace', cursive;
+    color: $Violeta;
+}
+
+.mainImagen4{
+    width: 400px;
+    height: 270px;
+}
+
+/* Aca arme 2 grids para que este mas organizado*/
+.sectionNosotros{
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+    margin: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    "Malala Lalo";
+    grid-column-gap: 10px;
+}
+
+/* Seccion MALALA */
+.Malala{
+    grid-area: 'Malala';
+}
+
+.tituloMalala{
+    text-align: center;
+    font-size: 25px;
+}
+
+.parrafoMalala{
+    display: block;
+    text-align: center;
+}
+
+/* Seccion LALO */
+.Lalo{
+    grid-area: "Lalo";
+}
+
+.tituloLalo{
+    text-align: center;
+    font-size: 25px;
+}
+
+.parrafoLalo{
+    display: block;
+    text-align: center;
+}
+
+.piedePagina2{
+    margin: 20px;
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}

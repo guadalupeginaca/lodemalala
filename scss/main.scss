@@ -1,1 +1,57 @@
+$Lilamuyclarito: rgb(183, 175, 193);
+$Lila: rgb(155, 162, 203);
+$Violeta: rgb(78, 90, 162);
+@font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
+
+
+@import "index";
 @import "nosotros";
+@import "servicios";
+@import "galeria";
+@import "contacto";
+@import "tabletscreen";
+@import "desktopscreen";
+
+
+.encabezadoLogo{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 15px;
+}
+
+#imagenLogo{
+    width: 60px; 
+    height: 50px;
+}
+
+.navbar-toggler{
+    margin: 0px 20px 0px 0px;
+}
+
+.navbar-brand{
+    color: $Violeta;
+    font-size: 40px;
+    font-family: 'Virtual';
+    font-weight: 500;
+    text-align: left;
+    margin: 30px 20px 10px 20px;
+}
+
+.imagenLogo{
+    width: 90px;
+    height: 80px;
+    position: relative;
+    top: 40px;
+    margin: 0px 0px 0px 35px;
+}
+
+.navbar-nav{
+    position: absolute;
+    right: 35px;
+    top: 100px;
+    padding: 5px;
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+    background-color: $Lila;
+    z-index: 7000;
+} 

@@ -1,0 +1,88 @@
+.mainServicios{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 300px;
+    grid-template-areas: 
+    "titulo"
+    "tabla";
+    justify-items: center;
+    align-items: center;
+}
+
+.tituloTabla{
+    grid-area: "titulo";
+    font-size: 30px;
+    margin: 20px 20px 20px 40px;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    color: $Violeta;
+}
+
+.tablaServicios{
+    grid-area: "tabla";
+    text-align: center;
+    color: $Violeta;
+    font-size: 15px;
+    font-family: 'Coming Soon', cursive;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin: 0px 0xp 15px 0px;
+}
+
+.tableColumn1{
+    font-size: 15px;
+}
+
+.tableColumn2{
+    font-size: 15px;
+}
+
+.fila1{
+    background-color: $Lilamuyclarito;
+}
+
+.fila3{
+    background-color: $Lilamuyclarito;
+}
+
+.fila5{
+    background-color: $Lilamuyclarito;
+}
+
+.seccionServ{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 250px;
+    grid-template-areas:
+    "tituloEstadia"
+    "bulletlist" ;
+}
+
+.estadiaIncluye{
+    grid-area: "tituloEstadia";
+    margin: 30px 0px 0px 15px;
+    color: $Violeta;
+    font-size: 18px;
+    font-family: 'Coming Soon', cursive;
+}
+
+.bulletList{
+    grid-area: "bulletlist";
+    margin: 20px;
+    li{
+        margin: 10px;
+        color: $Violeta;
+        font-size: 14px;
+        font-family: 'Coming Soon', cursive;
+    }
+}
+
+.piedePagina3{
+    margin: 40px;
+    font-size: 10px;
+    font-family: 'Coming Soon', cursive;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
