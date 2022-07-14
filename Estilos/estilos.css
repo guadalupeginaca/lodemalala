@@ -13,12 +13,6 @@
 
 @font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
 /* agregue linear-gradient al background del encabezado en todas las paginas */
-.encabezado{
-    /* justify-content: space-between;
-    z-index: 700; */
-    background: linear-gradient(to right, rgb(240, 226, 245), rgb(182, 146, 192));
-}
-
 
 .encabezadoLogo{
     display: flex;
@@ -26,19 +20,19 @@
     padding-bottom: 15px;
 }
 
-.imagenLogo{
+#imagenLogo{
     width: 60px; 
     height: 50px;
-    position: relative;
+    /* position: relative;
     top: 40px;
-    margin: 0px 0px 0px 35px;
+    margin: 0px 0px 0px 35px; */
 }
 
 .navbar-toggler{
     margin: 0px 20px 0px 0px;
 }
 
-.tituloPrincipal{
+.navbar-brand{
     color: rgb(78, 90, 162);
     font-size: 40px;
     font-family: 'Virtual';
@@ -47,27 +41,28 @@
     margin: 30px 20px 10px 20px;
 }
 
-/* .imagenLogo{
+.imagenLogo{
     width: 90px;
     height: 80px;
     position: relative;
     top: 40px;
     margin: 0px 0px 0px 35px;
-} */
+}
 
-.encabezadoMenu{
+.navbar-nav{
     position: absolute;
     right: 35px;
     top: 100px;
     padding: 5px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
-    /* background-color: rgb(155, 162, 203); */
+    background-color: rgb(155, 162, 203);
+    z-index: 7000;
 }
 
-.encabezadoMenulista li{
+/* .encabezadoMenulista li{
     display: inline;
-}
+} */
 
 /* Index 
 Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la derecha*/
@@ -126,7 +121,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     grid-area:"tituloyparrafo";
 }
 
-#mainTitulo{
+.mainTitulo{
     font-size: 30px;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
