@@ -23,9 +23,6 @@
 #imagenLogo{
     width: 60px; 
     height: 50px;
-    /* position: relative;
-    top: 40px;
-    margin: 0px 0px 0px 35px; */
 }
 
 .navbar-toggler{
@@ -60,12 +57,7 @@
     z-index: 7000;
 }
 
-/* .encabezadoMenulista li{
-    display: inline;
-} */
-
-/* Index 
-Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la derecha*/
+/* Index */
 
 .mainIndex{
     display: flex;
@@ -74,7 +66,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 }
 
 .mainParrafo{
-    margin: 15px 30px;
+    margin: 20px 50px;
     font-family: 'Coming Soon', cursive;
     font-size: 15px;
     text-align: center;
@@ -85,15 +77,10 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 .imagen1{
     width: 350px;
     height: 250px;
-    transition: all 3s;
-}
-.imagen1:hover{
-    width: 550px;
-    height: 350px;
 }
 
 .piedePagina{
-    margin: 20px;
+    margin: 40px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
     display: flex;
@@ -148,41 +135,15 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     width: 400px;
     height: 270px;
     margin: 10px 20px;
-    position: relative;
-    left: 20px;
-    transition: all 2s;
-}
-.mainImagen1:hover{
-    width: 280px;
-    height: 170px;
-    transform: rotate(70deg);
 }
 
 .mainImagen2{
     width: 370px;
     height: 250px;
-    margin: 10px 50px;
-    /* ANIMACIONES */
+    margin: 10px 0px 10px 35px;
 }
 
 /* Columna 1 Fila 2 */
-@keyframes desaparicion {
-    0%{
-        opacity: 100%;
-    }
-    25%{
-        opacity: 75%;
-    }
-    50%{
-        opacity: 50%;
-    }
-    75%{
-        opacity: 25%;
-    }
-    100%{
-        opacity: 0%;
-    }
-}
 .mainDivantes{
     grid-area: "antes";
 }
@@ -196,36 +157,11 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 }
 
 .mainImagen3{
-    /* margin: 30px; */
     width: 400px;
     height: 270px;
-    /* ANIMACIONES */
-    animation-name: desaparicion;
-    animation-duration: 7s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 /* Columna 2 Fila 2 */
-@keyframes aparicion{
-    0%{
-        opacity: 0%;
-    }
-    25%{
-        opacity: 25%;
-    }
-    50%{
-        opacity: 50%;
-    }
-    75%{
-        opacity: 75%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-
 .mainDivdespues{
     grid-area: "despues";
 }
@@ -239,15 +175,8 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
 }
 
 .mainImagen4{
-    /* margin: 30px; */
     width: 400px;
     height: 270px;
-    /* ANIMACIONES */
-    animation-name: aparicion;
-    animation-duration: 7s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 /* Aca arme 2 grids para que este mas organizado*/
@@ -403,16 +332,6 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
     margin: 20px 20px 20px 40px;
-}
-
-.parallax{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    max-width: 100%;
-    position: relative;
 }
  
 .texto1{
@@ -688,28 +607,28 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     justify-content: space-evenly;
 }
 
-/* TABLET */
+/* TABLET [pantala mediana]*/
 @media screen and (min-width: 768px){
     /* Header de todas las pagins*/
     .encabezadoLogo{
         flex-flow: row wrap;
     }
-    .tituloPrincipal{
+    .navbar-brand{
         font-size: 60px;
     }
-    .imagenLogo{
+    #imagenLogo{
         width: 80px;
         height: 60px;
     }
-    .encabezadoMenu{
+    .navbar-nav{
         position: absolute;
         right: 35px;
         top: 60px;
     }
-    .encabezadoMenulista{
+    /* .encabezadoMenulista{
         right: 30px;
         font-size: 15px;
-    }   
+    }    */
     /* index */
     .mainParrafo{
         font-size: 20px;
@@ -732,10 +651,14 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     .mainImagen1{
         width: 500px;
         height: 300px;
+        position: relative;
+        left: 110px;
     }
     .mainImagen2{
         width: 380px;
         height: 200px;
+        position: relative;
+        left: 150px;
     }
     .mainImagen3{
         width: 500px;
@@ -781,9 +704,9 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     .tituloGaleria{
         font-size: 40px;
     }
-    .parallax{
+    /* .parallax{
         height: 550px;
-    }
+    } */
     .texto1{
         margin: 10px 25px;
         font-size: 30px;
@@ -851,35 +774,37 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     }
 }
 
-/* DESKTOP */
-@media screen and (min-width: 1024px){
+/* DESKTOP [pantalla grande]*/
+@media screen and (min-width: 992px){
     /* Header de todas las paginas*/
-    .encabezado{
+    #encabezado{
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: repeat(2, 510px);
         grid-template-rows: 100%;
         grid-template-areas: 
         "Logo Menu";
     }
-    .imagenLogo{
+    .encabezadoLogo{
+        grid-area: "Logo";
+    }
+    #imagenLogo{
         margin: 0px 0px 0px 10px;
         width: 100px;
         height: 80px;
     }
-    .encabezadoLogo{
-        grid-area: "Logo";
-    }
-    .encabezadoMenu{
-        grid-area: "Menu";
-        align-items: center;
+    .navbar-brand{
         font-size: 70px;
+        margin: 25px 20px 10px 10px;
     }
-    .encabezadoMenu li{
+    .navbar-nav{
+        background-color: transparent;
+        grid-area: "Menu";
+        position: absolute;
+        top: 70px;
+    }
+    .navbar-nav li{
         font-size: 20px;
     }
-    /* .navbar-nav{
-        background-color: transparent;
-    } */
     /* Index */
     .imagen1{
         width: 1200px;
@@ -911,20 +836,22 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
         font-size: 25px;
     }
     .mainImagen1{
-        width: 550px;
-        height: 380px;
+        width: 500px;
+        height: 330px;
+        position: unset;
     }
     .mainImagen2{
         width: 400px;
         height: 250px;
-        margin: 5px 0px 10px 115px;
+        margin: 5px 0px 10px 70px;
+        position: unset;
     }
     .mainImagen3{
-        width: 600px;
+        width: 550px;
         height: 450px;
     }
     .mainImagen4{
-        width: 600px;
+        width: 550px;
         height: 450px;
     }
     .piedePagina2{
@@ -948,7 +875,6 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     }
     .bulletList li{
         font-size: 20px;
-        
     }
     .piedePagina3{
         font-size: 20px;
@@ -957,9 +883,9 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     .tituloGaleria{
         font-size: 50px;
     }
-    .parallax{
+    /* .parallax{
         height: 800px;
-    }
+    } */
     .texto1{
         margin: 20px 40px;
         font-size: 35px;
@@ -1025,7 +951,7 @@ Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la de
     }
     .gridContacto{
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 450px;
+        grid-template-rows: 580px;
         grid-template-areas: 
         "formulario logo";
         justify-content: center;
