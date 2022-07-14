@@ -3,7 +3,7 @@
     rgb(183, 175, 193) lila muy clarito
     rgb(78, 90, 162) violeta oscuro
     rgb(155, 162, 203) lila
-*/ 
+    */ 
 
 *{
     margin: 0px;
@@ -11,8 +11,14 @@
     box-sizing: border-box;
 }
 
-/* Logo font */
 @font-face { font-family: Virtual; src: url('../Fuentes/Virtual-Regular.ttf'); } 
+/* agregue linear-gradient al background del encabezado en todas las paginas */
+.encabezado{
+    /* justify-content: space-between;
+    z-index: 700; */
+    background: linear-gradient(to right, rgb(240, 226, 245), rgb(182, 146, 192));
+}
+
 
 .encabezadoLogo{
     display: flex;
@@ -20,16 +26,19 @@
     padding-bottom: 15px;
 }
 
-#imagenLogo{
+.imagenLogo{
     width: 60px; 
     height: 50px;
+    position: relative;
+    top: 40px;
+    margin: 0px 0px 0px 35px;
 }
 
 .navbar-toggler{
     margin: 0px 20px 0px 0px;
 }
 
-.navbar-brand{
+.tituloPrincipal{
     color: rgb(78, 90, 162);
     font-size: 40px;
     font-family: 'Virtual';
@@ -38,26 +47,30 @@
     margin: 30px 20px 10px 20px;
 }
 
-.imagenLogo{
+/* .imagenLogo{
     width: 90px;
     height: 80px;
     position: relative;
     top: 40px;
     margin: 0px 0px 0px 35px;
-}
+} */
 
-.navbar-nav{
+.encabezadoMenu{
     position: absolute;
     right: 35px;
     top: 100px;
     padding: 5px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
-    background-color: rgb(155, 162, 203);
-    z-index: 7000;
+    /* background-color: rgb(155, 162, 203); */
 }
 
-/* Index */
+.encabezadoMenulista li{
+    display: inline;
+}
+
+/* Index 
+Le agregue flexbox al index y solucione el espacio en blanco que quedaba a la derecha*/
 
 .mainIndex{
     display: flex;
@@ -66,7 +79,7 @@
 }
 
 .mainParrafo{
-    margin: 20px 50px;
+    margin: 15px 30px;
     font-family: 'Coming Soon', cursive;
     font-size: 15px;
     text-align: center;
@@ -77,10 +90,15 @@
 .imagen1{
     width: 350px;
     height: 250px;
+    transition: all 3s;
+}
+.imagen1:hover{
+    width: 550px;
+    height: 350px;
 }
 
 .piedePagina{
-    margin: 40px;
+    margin: 20px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
     display: flex;
@@ -108,7 +126,7 @@
     grid-area:"tituloyparrafo";
 }
 
-.mainTitulo{
+#mainTitulo{
     font-size: 30px;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
@@ -135,15 +153,41 @@
     width: 400px;
     height: 270px;
     margin: 10px 20px;
+    position: relative;
+    left: 20px;
+    transition: all 2s;
+}
+.mainImagen1:hover{
+    width: 280px;
+    height: 170px;
+    transform: rotate(70deg);
 }
 
 .mainImagen2{
     width: 370px;
     height: 250px;
-    margin: 10px 0px 10px 35px;   
+    margin: 10px 50px;
+    /* ANIMACIONES */
 }
 
 /* Columna 1 Fila 2 */
+@keyframes desaparicion {
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 75%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 25%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
 .mainDivantes{
     grid-area: "antes";
 }
@@ -157,12 +201,36 @@
 }
 
 .mainImagen3{
+    /* margin: 30px; */
     width: 400px;
     height: 270px;
-    
+    /* ANIMACIONES */
+    animation-name: desaparicion;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* Columna 2 Fila 2 */
+@keyframes aparicion{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
 .mainDivdespues{
     grid-area: "despues";
 }
@@ -176,8 +244,15 @@
 }
 
 .mainImagen4{
+    /* margin: 30px; */
     width: 400px;
     height: 270px;
+    /* ANIMACIONES */
+    animation-name: aparicion;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* Aca arme 2 grids para que este mas organizado*/
@@ -333,6 +408,16 @@
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
     margin: 20px 20px 20px 40px;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    max-width: 100%;
+    position: relative;
 }
  
 .texto1{
@@ -498,7 +583,7 @@
 }
 
 .textoConsultas{
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
@@ -508,7 +593,7 @@
 .gridContacto{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 600px 350px;
+    grid-template-rows: 450px 350px;
     grid-template-areas: 
     "formulario"
     "logo";
@@ -520,6 +605,7 @@
     font-size: 18px;
     font-family: 'Coming Soon', cursive;
     color: rgb(78, 90, 162);
+    /* margin: 40px 20px 20px 40px; */
 }
 
 .labelNom{
@@ -581,7 +667,6 @@
 .fotoContacto{
    z-index: 500;
    height: 200px;
-   margin: 10px 0px 0px 0px;
 }
 
 .fontLogo{
@@ -608,31 +693,28 @@
     justify-content: space-evenly;
 }
 
-/* TABLET [pantalla mediana]*/
+/* TABLET */
 @media screen and (min-width: 768px){
     /* Header de todas las pagins*/
     .encabezadoLogo{
         flex-flow: row wrap;
     }
-    .navbar-brand{
+    .tituloPrincipal{
         font-size: 60px;
     }
-    #imagenLogo{
+    .imagenLogo{
         width: 80px;
         height: 60px;
     }
-    .navbar-nav{
+    .encabezadoMenu{
         position: absolute;
         right: 35px;
-        top: 110px;
+        top: 60px;
     }
-    /* .encabezadoMenulista{
+    .encabezadoMenulista{
         right: 30px;
         font-size: 15px;
-        position: absolute;
-        right: 70px;
-        top: 70px;
-    } */
+    }   
     /* index */
     .mainParrafo{
         font-size: 20px;
@@ -655,14 +737,10 @@
     .mainImagen1{
         width: 500px;
         height: 300px;
-        position: relative;
-        left: 110px;
     }
     .mainImagen2{
         width: 380px;
         height: 200px;
-        position: relative;
-        left: 150px;
     }
     .mainImagen3{
         width: 500px;
@@ -778,37 +856,35 @@
     }
 }
 
-/* DESKTOP [pantalla grande]*/
-@media screen and (min-width: 992px){
+/* DESKTOP */
+@media screen and (min-width: 1024px){
     /* Header de todas las paginas*/
-    #encabezado{
+    .encabezado{
         display: grid;
-        grid-template-columns: repeat(2, 510px);
-        grid-template-rows: 150px;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
         grid-template-areas: 
         "Logo Menu";
     }
-    .encabezadoLogo{
-        grid-area: "Logo";
-    }   
-    #imagenLogo{
+    .imagenLogo{
         margin: 0px 0px 0px 10px;
         width: 100px;
         height: 80px;
-    } 
-    .navbar-brand{
-        font-size: 70px;
-        margin: 25px 20px 10px 10px;
     }
-    .navbar-nav{
-        background-color: transparent;
+    .encabezadoLogo{
+        grid-area: "Logo";
+    }
+    .encabezadoMenu{
         grid-area: "Menu";
-        position: absolute;
-        top: 70px;
+        align-items: center;
+        font-size: 70px;
     }
-    .navbar-nav li{
+    .encabezadoMenu li{
         font-size: 20px;
     }
+    /* .navbar-nav{
+        background-color: transparent;
+    } */
     /* Index */
     .imagen1{
         width: 1200px;
@@ -840,22 +916,20 @@
         font-size: 25px;
     }
     .mainImagen1{
-        width: 500px;
-        height: 330px;
-        position: unset;
+        width: 550px;
+        height: 380px;
     }
     .mainImagen2{
         width: 400px;
         height: 250px;
-        margin: 5px 0px 10px 70px;
-        position: unset;
+        margin: 5px 0px 10px 115px;
     }
     .mainImagen3{
-        width: 550px;
+        width: 600px;
         height: 450px;
     }
     .mainImagen4{
-        width: 550px;
+        width: 600px;
         height: 450px;
     }
     .piedePagina2{
@@ -956,7 +1030,7 @@
     }
     .gridContacto{
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 580px;
+        grid-template-rows: 450px;
         grid-template-areas: 
         "formulario logo";
         justify-content: center;
