@@ -282,7 +282,7 @@
 .gridContacto {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 450px 350px;
+  grid-template-rows: 650px 350px;
   grid-template-areas: "formulario" "logo";
   justify-items: center; }
 
