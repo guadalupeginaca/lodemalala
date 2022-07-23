@@ -20,10 +20,24 @@
 }
 
 .piedePagina{
-    margin: 40px;
+    padding: 30px;
+    margin-top: 15px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    background-color: $Celeste;
+}
+
+$links: (
+    Instagram: $Rosita,
+    Whatsapp: $Verdewpp,
+    Subir: $Blanquito,
+);
+
+@each $key, $valor in $links{
+    .#{$key}{
+        color: $valor;
+    }
 }

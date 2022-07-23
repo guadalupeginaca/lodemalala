@@ -2,6 +2,10 @@
   font-family: Virtual;
   src: url("../Fuentes/Virtual-Regular.ttf"); }
 
+.encabezado {
+  background-color: #c5cae7;
+  margin-bottom: 15px; }
+
 .encabezadoLogo {
   display: flex;
   flex-flow: column nowrap;
@@ -57,17 +61,28 @@
   height: 250px; }
 
 .piedePagina {
-  margin: 40px;
+  padding: 30px;
+  margin-top: 15px;
   font-size: 10px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-color: #c5cae7; }
+
+.Instagram {
+  color: #d151e4; }
+
+.Whatsapp {
+  color: #00bb2d; }
+
+.Subir {
+  color: #dfe7f3; }
 
 .mainNosotros {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 280px 630px 400px 400px;
+  grid-template-rows: 350px 600px 350px 350px;
   grid-template-areas: "tituloyparrafo" "mainImagen1y2" "antes" "despues";
   grid-row-gap: 10px;
   justify-items: center; }
@@ -171,12 +186,14 @@
   text-align: center; }
 
 .piedePagina2 {
-  margin: 20px;
+  padding: 30px;
+  margin-top: 15px;
   font-size: 10px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-color: #c5cae7; }
 
 .mainServicios {
   display: grid;
@@ -243,12 +260,14 @@
     font-family: 'Coming Soon', cursive; }
 
 .piedePagina3 {
-  margin: 40px;
+  padding: 30px;
+  margin-top: 15px;
   font-size: 10px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-color: #c5cae7; }
 
 .tituloGaleria {
   font-size: 30px;
@@ -258,12 +277,14 @@
   margin: 20px 20px 20px 40px; }
 
 .piedePagina4 {
-  margin: 40px;
+  padding: 30px;
+  margin-top: 15px;
   font-size: 10px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-color: #c5cae7; }
 
 .tituloContacto {
   font-size: 30px;
@@ -354,12 +375,14 @@
   text-align: center; }
 
 .piedePagina5 {
-  margin: 40px;
+  padding: 30px;
+  margin-top: 15px;
   font-size: 10px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-color: #c5cae7; }
 
 @media screen and (min-width: 768px) {
   /* Header de todas las pagins*/
@@ -373,7 +396,7 @@
   .navbar-nav {
     position: absolute;
     right: 35px;
-    top: 60px; }
+    top: 107px; }
   /* index */
   .mainParrafo {
     font-size: 20px; }
@@ -504,8 +527,8 @@
     font-size: 20px; }
   /* Index */
   .imagen1 {
-    width: 1200px;
-    height: 800px; }
+    width: 1000px;
+    height: 700px; }
   .mainParrafo {
     font-size: 25px;
     margin: 20px 150px; }

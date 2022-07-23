@@ -2,7 +2,7 @@
 .mainNosotros{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 280px 630px 400px 400px;
+    grid-template-rows: 350px 600px 350px 350px;
     grid-template-areas:
     "tituloyparrafo"
     "mainImagen1y2"
@@ -131,10 +131,12 @@
 }
 
 .piedePagina2{
-    margin: 20px;
+    padding: 30px;
+    margin-top: 15px;
     font-size: 10px;
     font-family: 'Coming Soon', cursive;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    background-color: $Celeste;
 }
