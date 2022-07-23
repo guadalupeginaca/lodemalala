@@ -20,7 +20,7 @@
 
 .navbar-brand {
   color: #4e5aa2;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Virtual';
   font-weight: 500;
   text-align: left;
@@ -35,10 +35,10 @@
 
 .navbar-nav {
   position: absolute;
-  right: 35px;
-  top: 100px;
+  right: 26px;
+  top: 93px;
   padding: 5px;
-  font-size: 10px;
+  font-size: 15px;
   font-family: 'Coming Soon', cursive;
   background-color: #9ba2cb;
   z-index: 7000; }
@@ -51,7 +51,7 @@
 .mainParrafo {
   margin: 20px 50px;
   font-family: 'Coming Soon', cursive;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   color: #4e5aa2;
   font-style: italic; }
@@ -63,7 +63,7 @@
 .piedePagina {
   padding: 30px;
   margin-top: 15px;
-  font-size: 10px;
+  font-size: 15px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
@@ -188,7 +188,7 @@
 .piedePagina2 {
   padding: 30px;
   margin-top: 15px;
-  font-size: 10px;
+  font-size: 15px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
@@ -262,7 +262,7 @@
 .piedePagina3 {
   padding: 30px;
   margin-top: 15px;
-  font-size: 10px;
+  font-size: 15px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
@@ -276,10 +276,41 @@
   color: #4e5aa2;
   margin: 20px 20px 20px 40px; }
 
+.collageGaleria {
+  display: grid;
+  grid-template-columns: 270px 100px 100px;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas: "foto1 foto1 foto2" "foto1 foto1 foto3" "foto4 foto4 foto5"; }
+
+.foto1 {
+  height: 180px;
+  width: 250px;
+  grid-area: "foto1"; }
+
+.foto2 {
+  height: 70px;
+  width: 90px;
+  grid-area: "foto2"; }
+
+.foto3 {
+  height: 70px;
+  width: 90px;
+  grid-area: "foto3"; }
+
+.foto4 {
+  height: 200px;
+  width: 320px;
+  grid-area: "foto4"; }
+
+.foto5 {
+  height: 90px;
+  width: 150px;
+  grid-area: "foto5"; }
+
 .piedePagina4 {
   padding: 30px;
   margin-top: 15px;
-  font-size: 10px;
+  font-size: 15px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
@@ -377,7 +408,7 @@
 .piedePagina5 {
   padding: 30px;
   margin-top: 15px;
-  font-size: 10px;
+  font-size: 15px;
   font-family: 'Coming Soon', cursive;
   display: flex;
   flex-flow: row nowrap;
@@ -394,9 +425,10 @@
     width: 80px;
     height: 60px; }
   .navbar-nav {
+    font-size: 20px;
     position: absolute;
-    right: 35px;
-    top: 107px; }
+    right: 15px;
+    top: 109px; }
   /* index */
   .mainParrafo {
     font-size: 20px; }
@@ -404,7 +436,7 @@
     width: 700px;
     height: 500px; }
   .piedePagina {
-    font-size: 15px; }
+    font-size: 20px; }
   /* Nosotros */
   .mainTitulo {
     font-size: 40px; }
@@ -427,6 +459,8 @@
   .mainImagen4 {
     width: 500px;
     height: 300px; }
+  .piedePagina2 {
+    font-size: 20px; }
   /* Servicios */
   .mainServicios {
     grid-template-rows: 100px 400px; }
@@ -449,7 +483,7 @@
     position: relative;
     left: 140px; }
   .piedePagina3 {
-    font-size: 15px; }
+    font-size: 20px; }
   /* Galeria */
   .tituloGaleria {
     font-size: 40px; }
@@ -493,14 +527,14 @@
     margin: 10px 25px;
     font-size: 30px; }
   .piedePagina4 {
-    font-size: 15px; }
+    font-size: 20px; }
   /* Contacto */
   .tituloContacto {
     font-size: 40px; }
   .textoConsultas {
     font-size: 25px; }
   .piedePagina5 {
-    font-size: 15px; } }
+    font-size: 20px; } }
 
 @media screen and (min-width: 992px) {
   /* Header de todas las paginas*/
@@ -524,7 +558,7 @@
     position: absolute;
     top: 70px; }
   .navbar-nav li {
-    font-size: 20px; }
+    font-size: 25px; }
   /* Index */
   .imagen1 {
     width: 1000px;

@@ -6,10 +6,50 @@
     margin: 20px 20px 20px 40px;
 }
 
+.collageGaleria{
+    display: grid;
+    grid-template-columns: 270px 100px 100px;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "foto1 foto1 foto2"
+    "foto1 foto1 foto3"
+    "foto4 foto4 foto5";
+}
+
+.foto1{
+    height: 180px;
+    width: 250px;
+    grid-area: "foto1";
+}
+
+.foto2{
+    height: 70px;
+    width: 90px;
+    grid-area: "foto2";
+}
+
+.foto3{
+    height: 70px;
+    width: 90px;
+    grid-area: "foto3";
+}
+
+.foto4{
+    height: 200px;
+    width: 320px;
+    grid-area: "foto4";
+}
+
+.foto5{
+    height: 90px;
+    width: 150px;
+    grid-area: "foto5";
+}
+
 .piedePagina4{
     padding: 30px;
     margin-top: 15px;
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Coming Soon', cursive;
     display: flex;
     flex-flow: row nowrap;

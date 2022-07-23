@@ -11,9 +11,10 @@
         height: 60px;
     }
     .navbar-nav{
+        font-size: 20px;
         position: absolute;
-        right: 35px;
-        top: 107px;
+        right: 15px;
+        top: 109px;
     }
     /* index */
     .mainParrafo{
@@ -24,7 +25,7 @@
         height: 500px;
     }
     .piedePagina{
-        font-size: 15px;
+        font-size: 20px;
     }
     /* Nosotros */
     .mainTitulo{
@@ -53,6 +54,9 @@
     .mainImagen4{
         width: 500px;
         height: 300px;
+    }
+    .piedePagina2{
+        font-size: 20px;
     }
     /* Servicios */
     .mainServicios{
@@ -84,7 +88,7 @@
         left: 140px;
     }
     .piedePagina3{
-        font-size: 15px;
+        font-size: 20px;
     }
     /* Galeria */
     .tituloGaleria{
@@ -143,7 +147,7 @@
         font-size: 30px;
     }
     .piedePagina4{
-        font-size: 15px;
+        font-size: 20px;
     }
     /* Contacto */
     .tituloContacto{
@@ -153,6 +157,6 @@
         font-size: 25px;
     }
     .piedePagina5{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
