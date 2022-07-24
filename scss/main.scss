@@ -53,7 +53,12 @@ $Verdewpp: #00bb2d;
     font-family: 'Coming Soon', cursive;
     background-color: $Lila;
     z-index: 7000;
-} 
+}
+
+@mixin size ($width, $height){
+    height: $height;
+    width: $width;
+}
 
 @import "index";
 @import "nosotros";

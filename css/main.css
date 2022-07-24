@@ -494,45 +494,26 @@
   /* Galeria */
   .tituloGaleria {
     font-size: 40px; }
-  .texto1 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto2 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto3 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto4 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto5 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto6 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto7 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto8 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto9 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto10 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto11 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto12 {
-    margin: 10px 25px;
-    font-size: 30px; }
-  .texto13 {
-    margin: 10px 25px;
-    font-size: 30px; }
+  .collageGaleria {
+    grid-template-rows: 175px 175px 300px; }
+  .foto1 {
+    height: 325px;
+    width: 470px; }
+  .foto2 {
+    height: 150px;
+    width: 230px; }
+  .foto3 {
+    height: 150px;
+    width: 230px;
+    left: 500px; }
+  .foto4 {
+    height: 220px;
+    width: 310px;
+    top: 608px;
+    right: 40px; }
+  .foto5 {
+    height: 220px;
+    width: 380px; }
   .piedePagina4 {
     font-size: 20px; }
   /* Contacto */
@@ -623,45 +604,26 @@
   /* Galeria */
   .tituloGaleria {
     font-size: 50px; }
-  .texto1 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto2 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto3 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto4 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto5 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto6 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto7 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto8 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto9 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto10 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto11 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto12 {
-    margin: 20px 40px;
-    font-size: 35px; }
-  .texto13 {
-    margin: 20px 40px;
-    font-size: 35px; }
+  .collageGaleria {
+    grid-template-rows: 240px 220px 330px; }
+  .foto1 {
+    height: 440px;
+    width: 650px; }
+  .foto2 {
+    height: 230px;
+    width: 320px; }
+  .foto3 {
+    height: 200px;
+    width: 320px;
+    left: 665px; }
+  .foto4 {
+    height: 280px;
+    width: 520px;
+    top: 740px;
+    right: 40px; }
+  .foto5 {
+    height: 280px;
+    width: 420px; }
   .piedePagina4 {
     font-size: 20px; }
   /* Contacto */

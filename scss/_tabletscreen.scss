@@ -94,57 +94,26 @@
     .tituloGaleria{
         font-size: 40px;
     }
-    .texto1{
-        margin: 10px 25px;
-        font-size: 30px;
+    .collageGaleria{
+        grid-template-rows: 175px 175px 300px;
     }
-    .texto2{
-        margin: 10px 25px;
-        font-size: 30px;
+    .foto1{
+        @include size (470px, 325px);
     }
-    .texto3{
-        margin: 10px 25px;
-        font-size: 30px;
+    .foto2{
+        @include size (230px, 150px);
     }
-    .texto4{
-        margin: 10px 25px;
-        font-size: 30px;
+    .foto3{
+        @include size (230px, 150px);
+        left: 500px;
     }
-    .texto5{
-        margin: 10px 25px;
-        font-size: 30px;
+    .foto4{
+        @include size (310px, 220px);
+        top: 608px;
+        right: 40px;
     }
-    .texto6{
-        margin: 10px 25px;
-        font-size: 30px;
-    }
-    .texto7{
-        margin: 10px 25px;
-        font-size: 30px;
-    }
-    .texto8{
-        margin: 10px 25px;
-        font-size: 30px;
-    }
-    .texto9{
-        margin: 10px 25px;
-        font-size: 30px;
-    }
-    .texto10{
-        margin: 10px 25px;
-        font-size: 30px;
-    }
-    .texto11{
-        margin: 10px 25px;
-        font-size: 30px;
-    }
-    .texto12{
-        margin: 10px 25px;
-        font-size: 30px;
-    }
-    .texto13{
-        margin: 10px 25px;
-        font-size: 30px;
+    .foto5{
+        @include size (380px, 220px);
     }
     .piedePagina4{
         font-size: 20px;
