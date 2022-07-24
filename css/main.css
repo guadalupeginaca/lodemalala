@@ -278,34 +278,41 @@
 
 .collageGaleria {
   display: grid;
-  grid-template-columns: 270px 100px 100px;
-  grid-template-rows: repeat(3, 200px);
-  grid-template-areas: "foto1 foto1 foto2" "foto1 foto1 foto3" "foto4 foto4 foto5"; }
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 100px 95px 140px;
+  grid-template-areas: "foto1 foto2" "foto1 foto3" "foto5 foto4"; }
 
 .foto1 {
   height: 180px;
   width: 250px;
-  grid-area: "foto1"; }
+  grid-area: "foto1";
+  padding-left: 20px; }
 
 .foto2 {
-  height: 70px;
-  width: 90px;
+  height: 80px;
+  width: 120px;
   grid-area: "foto2"; }
 
 .foto3 {
-  height: 70px;
-  width: 90px;
-  grid-area: "foto3"; }
+  height: 80px;
+  width: 120px;
+  grid-area: "foto3";
+  position: absolute;
+  left: 277px; }
 
 .foto4 {
-  height: 200px;
-  width: 320px;
-  grid-area: "foto4"; }
+  height: 110px;
+  width: 170px;
+  grid-area: "foto4";
+  position: absolute;
+  top: 427px;
+  right: 20px; }
 
 .foto5 {
-  height: 90px;
-  width: 150px;
-  grid-area: "foto5"; }
+  height: 110px;
+  width: 200px;
+  grid-area: "foto5";
+  margin-left: 20px; }
 
 .piedePagina4 {
   padding: 30px;
