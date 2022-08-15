@@ -3,8 +3,8 @@
   src: url("../Fuentes/Virtual-Regular.ttf"); }
 
 .encabezado {
-  background-color: #c5cae7;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  background-color: #c5cae7; }
 
 .encabezadoLogo {
   display: flex;
