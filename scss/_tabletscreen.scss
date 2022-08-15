@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px){
-    /* Header de todas las pagins*/
+    /* Header de todas las paginas: agrande letras e imagen logo*/
     .encabezadoLogo{
         flex-flow: row wrap;
     }
@@ -16,7 +16,7 @@
         right: 15px;
         top: 109px;
     }
-    /* index */
+    /* index: agrande letras e imagenes*/
     .mainParrafo{
         font-size: 20px;
     }
@@ -27,14 +27,13 @@
     .piedePagina{
         font-size: 20px;
     }
-    /* Nosotros */
+    /* Nosotros: agrande letras, imagenes y acomode posiciones */
     .mainTitulo{
         font-size: 40px;
     }
     .mainHistoria{
         font-size: 20px;
     } 
-    /* No entiendo porque mainImagen1 y mainImagen2 no se centran si yo ya puse justify-items:center */
     .mainImagen1{
         width: 500px;
         height: 300px;
@@ -58,7 +57,7 @@
     .piedePagina2{
         font-size: 20px;
     }
-    /* Servicios */
+    /* Servicios: agrande letras e images, y agregue grillas para que visualmente se vea mejor*/
     .mainServicios{
         grid-template-rows: 100px 270px;
     }
@@ -90,7 +89,7 @@
     .piedePagina3{
         font-size: 20px;
     }
-    /* Galeria */
+    /* Galeria: agrande imagenes para que se adapte al tamaño de tablet */
     .tituloGaleria{
         font-size: 40px;
     }
@@ -118,7 +117,7 @@
     .piedePagina4{
         font-size: 20px;
     }
-    /* Contacto */
+    /* Contacto: agrende tamaño letras*/
     .tituloContacto{
         font-size: 40px;
     }

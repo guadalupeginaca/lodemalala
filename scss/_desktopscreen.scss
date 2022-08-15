@@ -1,5 +1,5 @@
 @media screen and (min-width: 992px){
-    /* Header de todas las paginas*/
+    /* Header de todas las paginas: agregue una grilla para que el encabezado se vea mejor con el tamaño de desktop. Tambien agrande letras */
     #encabezado{
         display: grid;
         grid-template-columns: repeat(2, 510px);
@@ -28,7 +28,7 @@
     .navbar-nav li{
         font-size: 25px;
     }
-    /* Index */
+    /* Index: agrende letras e imagenes */
     .imagen1{
         width: 1000px;
         height: 700px;
@@ -40,7 +40,7 @@
     .piedePagina{
         font-size: 20px;
     }
-    /* Nosotros */
+    /* Nosotros: agregue grillas para que el contenido este mas organizado y agrende letras e imagenes */
     .mainNosotros{
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -80,7 +80,7 @@
     .piedePagina2{
         font-size: 20px;
     }
-    /* Servicios */
+    /* Servicios: agregue tambien una tabla para que la lista este al lado de la tabla y se vea mejor distribuido el contenido. Tabien agrande las letras */
     .gridTablaservicios{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -131,7 +131,7 @@
     .piedePagina3{
         font-size: 20px;
     }
-    /* Galeria */
+    /* Galeria: agrande los tañanos de las imagenes para que sea coherente con el tamaño desktop */
     .tituloGaleria{
         font-size: 50px;
     }
@@ -159,7 +159,7 @@
     .piedePagina4{
         font-size: 20px;
     }
-    /* Contacto */
+    /* Contacto: agregue una grilla en esta pagina para que quede mejor visualemente el contenido */
     .tituloContacto{
         font-size: 50px;
     }

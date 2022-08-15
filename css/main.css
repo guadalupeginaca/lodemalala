@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Virtual;
   src: url("../Fuentes/Virtual-Regular.ttf"); }
@@ -458,7 +459,7 @@
   color: #dfe7f3; }
 
 @media screen and (min-width: 768px) {
-  /* Header de todas las pagins*/
+  /* Header de todas las paginas: agrande letras e imagen logo*/
   .encabezadoLogo {
     flex-flow: row wrap; }
   .navbar-brand {
@@ -471,7 +472,7 @@
     position: absolute;
     right: 15px;
     top: 109px; }
-  /* index */
+  /* index: agrande letras e imagenes*/
   .mainParrafo {
     font-size: 20px; }
   .imagen1 {
@@ -479,12 +480,11 @@
     height: 500px; }
   .piedePagina {
     font-size: 20px; }
-  /* Nosotros */
+  /* Nosotros: agrande letras, imagenes y acomode posiciones */
   .mainTitulo {
     font-size: 40px; }
   .mainHistoria {
     font-size: 20px; }
-  /* No entiendo porque mainImagen1 y mainImagen2 no se centran si yo ya puse justify-items:center */
   .mainImagen1 {
     width: 500px;
     height: 300px;
@@ -503,7 +503,7 @@
     height: 300px; }
   .piedePagina2 {
     font-size: 20px; }
-  /* Servicios */
+  /* Servicios: agrande letras e images, y agregue grillas para que visualmente se vea mejor*/
   .mainServicios {
     grid-template-rows: 100px 270px; }
   .tituloTabla {
@@ -526,7 +526,7 @@
     left: 140px; }
   .piedePagina3 {
     font-size: 20px; }
-  /* Galeria */
+  /* Galeria: agrande imagenes para que se adapte al tamaño de tablet */
   .tituloGaleria {
     font-size: 40px; }
   .collageGaleria {
@@ -551,7 +551,7 @@
     width: 380px; }
   .piedePagina4 {
     font-size: 20px; }
-  /* Contacto */
+  /* Contacto: agrende tamaño letras*/
   .tituloContacto {
     font-size: 40px; }
   .textoConsultas {
@@ -560,7 +560,7 @@
     font-size: 20px; } }
 
 @media screen and (min-width: 992px) {
-  /* Header de todas las paginas*/
+  /* Header de todas las paginas: agregue una grilla para que el encabezado se vea mejor con el tamaño de desktop. Tambien agrande letras */
   #encabezado {
     display: grid;
     grid-template-columns: repeat(2, 510px);
@@ -582,7 +582,7 @@
     top: 70px; }
   .navbar-nav li {
     font-size: 25px; }
-  /* Index */
+  /* Index: agrende letras e imagenes */
   .imagen1 {
     width: 1000px;
     height: 700px; }
@@ -591,7 +591,7 @@
     margin: 20px 150px; }
   .piedePagina {
     font-size: 20px; }
-  /* Nosotros */
+  /* Nosotros: agregue grillas para que el contenido este mas organizado y agrende letras e imagenes */
   .mainNosotros {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -621,7 +621,7 @@
     height: 450px; }
   .piedePagina2 {
     font-size: 20px; }
-  /* Servicios */
+  /* Servicios: agregue tambien una tabla para que la lista este al lado de la tabla y se vea mejor distribuido el contenido. Tabien agrande las letras */
   .gridTablaservicios {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -660,7 +660,7 @@
     left: 30px; }
   .piedePagina3 {
     font-size: 20px; }
-  /* Galeria */
+  /* Galeria: agrande los tañanos de las imagenes para que sea coherente con el tamaño desktop */
   .tituloGaleria {
     font-size: 50px; }
   .collageGaleria {
@@ -685,7 +685,7 @@
     width: 420px; }
   .piedePagina4 {
     font-size: 20px; }
-  /* Contacto */
+  /* Contacto: agregue una grilla en esta pagina para que quede mejor visualemente el contenido */
   .tituloContacto {
     font-size: 50px; }
   .textoConsultas {
