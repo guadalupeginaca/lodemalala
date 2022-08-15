@@ -195,13 +195,21 @@
   justify-content: space-evenly;
   background-color: #c5cae7; }
 
+.Instagram {
+  color: #d151e4; }
+
+.Whatsapp {
+  color: #00bb2d; }
+
+.Subir {
+  color: #dfe7f3; }
+
 .mainServicios {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 70px 300px;
   grid-template-areas: "titulo" "tabla";
-  justify-items: center;
-  align-items: center; }
+  justify-items: center; }
 
 .tituloTabla {
   grid-area: "titulo";
@@ -269,6 +277,15 @@
   justify-content: space-evenly;
   background-color: #c5cae7; }
 
+.Instagram {
+  color: #d151e4; }
+
+.Whatsapp {
+  color: #00bb2d; }
+
+.Subir {
+  color: #dfe7f3; }
+
 .tituloGaleria {
   font-size: 30px;
   text-align: center;
@@ -323,6 +340,15 @@
   flex-flow: row nowrap;
   justify-content: space-evenly;
   background-color: #c5cae7; }
+
+.Instagram {
+  color: #d151e4; }
+
+.Whatsapp {
+  color: #00bb2d; }
+
+.Subir {
+  color: #dfe7f3; }
 
 .tituloContacto {
   font-size: 30px;
@@ -422,6 +448,15 @@
   justify-content: space-evenly;
   background-color: #c5cae7; }
 
+.Instagram {
+  color: #d151e4; }
+
+.Whatsapp {
+  color: #00bb2d; }
+
+.Subir {
+  color: #dfe7f3; }
+
 @media screen and (min-width: 768px) {
   /* Header de todas las pagins*/
   .encabezadoLogo {
@@ -470,7 +505,7 @@
     font-size: 20px; }
   /* Servicios */
   .mainServicios {
-    grid-template-rows: 100px 400px; }
+    grid-template-rows: 100px 270px; }
   .tituloTabla {
     font-size: 40px; }
   .tablaServicios {
@@ -587,6 +622,22 @@
   .piedePagina2 {
     font-size: 20px; }
   /* Servicios */
+  .gridTablaservicios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 3fr;
+    grid-template-areas: "tabla lista"; }
+  .mainServicios {
+    grid-area: "tabla";
+    display: flex;
+    justify-content: center;
+    align-content: flex-start; }
+  .seccionServ {
+    grid-area: "lista";
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center; }
   .tituloTabla {
     font-size: 50px; }
   .tablaServicios {
@@ -596,9 +647,17 @@
   .tableColumn2 {
     font-size: 30px; }
   .estadiaIncluye {
-    font-size: 27px; }
+    font-size: 27px;
+    position: relative;
+    left: 0px; }
+  .bulletList {
+    margin: 0px;
+    padding-left: 0px;
+    padding: 10px; }
   .bulletList li {
-    font-size: 20px; }
+    font-size: 20px;
+    position: relative;
+    left: 30px; }
   .piedePagina3 {
     font-size: 20px; }
   /* Galeria */

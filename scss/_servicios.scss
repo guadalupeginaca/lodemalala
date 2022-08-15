@@ -6,7 +6,6 @@
     "titulo"
     "tabla";
     justify-items: center;
-    align-items: center;
 }
 
 .tituloTabla{
@@ -87,4 +86,16 @@
     flex-flow: row nowrap;
     justify-content: space-evenly;
     background-color: $Celeste;
+}
+
+$links: (
+    Instagram: $Rosita,
+    Whatsapp: $Verdewpp,
+    Subir: $Blanquito,
+);
+
+@each $key, $valor in $links{
+    .#{$key}{
+        color: $valor;
+    }
 }

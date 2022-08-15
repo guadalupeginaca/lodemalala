@@ -81,6 +81,26 @@
         font-size: 20px;
     }
     /* Servicios */
+    .gridTablaservicios{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+        "tabla lista";
+    }
+    .mainServicios{
+        grid-area: "tabla";
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .seccionServ{
+        grid-area: "lista";
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
     .tituloTabla{
         font-size: 50px;
     }
@@ -95,9 +115,18 @@
     }
     .estadiaIncluye{
         font-size: 27px;
+        position: relative;
+        left: 0px;
+    }
+    .bulletList{
+        margin: 0px;
+        padding-left: 0px;
+        padding: 10px;
     }
     .bulletList li{
         font-size: 20px;
+        position: relative;
+        left: 30px;
     }
     .piedePagina3{
         font-size: 20px;

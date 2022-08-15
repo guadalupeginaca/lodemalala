@@ -117,3 +117,15 @@
     justify-content: space-evenly;
     background-color: $Celeste;
 }
+
+$links: (
+    Instagram: $Rosita,
+    Whatsapp: $Verdewpp,
+    Subir: $Blanquito,
+);
+
+@each $key, $valor in $links{
+    .#{$key}{
+        color: $valor;
+    }
+}
